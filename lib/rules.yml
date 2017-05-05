@@ -1,0 +1,10 @@
+rules:
+
+  # If you buy 2 or more lavender hearts then the price drops to £8.50.
+  - :qty_threshold: 2
+    :product_code: '001'
+    :per_item_discount: 75 # 75p discount from £9.25 -> £8.50
+
+  # If you spend over £60, then you get 10% off of your purchase.
+  - :spend_threshold: 6000
+    :percent_discount: 0.1 # 10%
